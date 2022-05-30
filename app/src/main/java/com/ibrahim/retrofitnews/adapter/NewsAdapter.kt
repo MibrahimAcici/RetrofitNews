@@ -19,19 +19,7 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.NewsVH>() {
     }
 
     inner class NewsVH(val binding: ItemNewsBinding) : RecyclerView.ViewHolder(binding.root) {
-/*
-        fun bind(s: PlaceItem?) {
-            s?.date?.let {
-                if (it.length > 15) {
-                    itemView.tv_item.setTextColor(
-                        ContextCompat.getColor(
-                            itemView.context,
-                            R.color.purple_700
-                        )
-                    )
-                }
-            }
-        }*/
+
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsVH {
         return NewsVH(ItemNewsBinding.inflate(LayoutInflater.from(parent.context),parent,false))
